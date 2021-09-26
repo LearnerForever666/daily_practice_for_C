@@ -1,3 +1,8 @@
+/*这是一个有关数组内容右旋的题目，要求在第一行输入数组元素个数以及右旋个数，空格隔开，换行后输入数组内容，回车结束，之后能够打印出右旋之后的内容*/
+/*
+author:LearnerForever
+Date:2021 Sep 25th
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -22,7 +27,7 @@ int main()
 	int* tmp;
 	int num=0,dexnum=0;
 	int i=0;
-	printf("����������Ԫ�ظ��� ����λ��:>");
+	printf("请输入数组元素个数 右旋位数:>");
 	scanf("%d %d",&num,&dexnum);
 	tmp=(int*)malloc(sizeof(int)*num);
 	if(tmp==NULL)
@@ -32,7 +37,7 @@ int main()
 	};
 	dex=tmp;
 	tmp=NULL;
-	printf("�������������ݣ��ÿո����:>");
+	printf("请输入数组内容，用空格隔开:>");
 	for(i=0;i<num;i++)
 	{
 		scanf("%d",&dex[i]);
