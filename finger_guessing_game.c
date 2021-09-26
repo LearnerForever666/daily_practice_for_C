@@ -1,4 +1,9 @@
 //猜拳游戏的实现
+/*
+author:LearnerForever
+Date:2021 Sep 26th
+*/
+#include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
 #include<string.h>
