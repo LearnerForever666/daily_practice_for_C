@@ -1,3 +1,10 @@
+/*
+è¿™æ˜¯ä¸€ä¸ªåˆ¤æ–­ä¸€ä¸ªæ•°æ˜¯å¦ä¸ºæŸä¸€ä¸ªæ•°çš„æ¬¡æ–¹æ•°çš„æ–¹æ³•
+*/
+/*
+author:LearnerForever
+Date:2021 Sep 26th
+*/
 #include<stdio.h>
 int main()
 {
@@ -5,10 +12,10 @@ int main()
 	int timesnum=0;
 	int count=0;
 	int rem=0;
-	printf("ÇëÊäÈë´ı²âÊÔµÄÊı×Ö:>");
+	printf("è¯·è¾“å…¥å¾…æµ‹è¯•çš„æ•°å­—:>");
 	scanf("%d",&testnum);
 	rem=testnum;
-	printf("ÇëÊäÈë»ù±¾´Î·½Êı:>");
+	printf("è¯·è¾“å…¥åŸºæœ¬æ¬¡æ–¹æ•°:>");
 	scanf("%d",&timesnum);
 	while(testnum&&!(testnum%timesnum))
 	{
@@ -17,11 +24,11 @@ int main()
 	};
 	if(testnum==1)
 	{
-		printf("%d ÊÇ %d µÄ %d ´Î·½\n",rem,timesnum,count);
+		printf("%d æ˜¯ %d çš„ %d æ¬¡æ–¹\n",rem,timesnum,count);
 	}
 	else
 	{
-		printf("%d ²»ÊÇ %d µÄ´Î·½Êı\n",rem,timesnum);
+		printf("%d ä¸æ˜¯ %d çš„æ¬¡æ–¹æ•°\n",rem,timesnum);
 	}
 	return 0;
 }
