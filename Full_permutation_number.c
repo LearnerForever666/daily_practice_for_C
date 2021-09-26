@@ -1,3 +1,10 @@
+/*
+该方法可以用于全排列数的生成，并且可以结合数组使得数组内元素的全排列
+*/
+/*
+author:LearnerForever
+Date:2021 Sep 26th
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -36,7 +43,7 @@ int main()
 {
 	int number_of_permutation=0;
 	int* tmp=NULL;
-	printf("��������Ҫ��ȫ�������ĸ���:>");
+	printf("请输入需要的全排列数的个数:>");
 	scanf("%d",&number_of_permutation);
 	rem=number_of_permutation;
 	tmp=(int*)malloc(number_of_permutation*sizeof(int));
