@@ -1,4 +1,4 @@
-//²ÂÈ­ÓÎÏ·µÄÊµÏÖ
+//çŒœæ‹³æ¸¸æˆçš„å®ç°
 #include<stdlib.h>
 #include<time.h>
 #include<string.h>
@@ -8,46 +8,47 @@ void transprint(char* who,int qnum)
 	switch(qnum)
 	{
 		case 0:
-			strcpy(quan,"¼ôµ¶");
+			strcpy(quan,"å‰ªåˆ€");
 			break;
 		case 1:
-			strcpy(quan,"Ê¯Í·");
+			strcpy(quan,"çŸ³å¤´");
 			break;
 		case 2:
-			strcpy(quan,"²¼");
+			strcpy(quan,"å¸ƒ");
 			break;
 	};
 	printf("%s : %s",who,quan);
 }
 void menu()
 {
-	printf("%-5s  %-5s\n","0:¼ôµ¶","1:Ê¯Í·");
-	printf("%-5s\n","2:²¼");
+	printf("%-5s  %-5s\n","0:å‰ªåˆ€","1:çŸ³å¤´");
+	printf("%-5s\n","2:å¸ƒ");
 }
 int main()
 {
 	int cup_quan=0;
 	int pla_quan=0;
 	menu();
-	printf("ÇëÑ¡Ôñ:>");
+	printf("è¯·é€‰æ‹©:>");
 	scanf("%d",&pla_quan);
 	srand(time(NULL));
-	cup_quan=rand()%3;
 	if(pla_quan-cup_quan==1||pla_quan-cup_quan==-2)
 	{
-		printf("Íæ¼ÒÊ¤Àû!!!\n");
+
+	cup_quan=rand()%3;
+		printf("ç©å®¶èƒœåˆ©!!!\n");
 	}
 	else if(cup_quan-pla_quan==1||cup_quan-pla_quan==-2)
 	{
-		printf("µçÄÔÊ¤Àû!!!\n");
+		printf("ç”µè„‘èƒœåˆ©!!!\n");
 	}
 	else
 	{
-		printf("Æ½¾Ö\n");
+		printf("å¹³å±€\n");
 	};
-	transprint("Íæ¼Ò",pla_quan);
+	transprint("ç©å®¶",pla_quan);
 	printf("  ");
-	transprint("µçÄÔ",cup_quan);
+	transprint("ç”µè„‘",cup_quan);
 	printf("\n");
 	return 0;
 }
