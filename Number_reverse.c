@@ -35,7 +35,9 @@ int Number_reverse(int num)
 }
 int main()
 {
-	int num=12345;
+	int num=0;
+	printf("请输入待调换顺序的数字:>");
+	scanf("%d",&num);
 	num=Number_reverse(num);
 	printf("%d\n",num);
 	return 0;
