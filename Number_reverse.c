@@ -1,3 +1,8 @@
+//输入一个数字，通过Number_reverse()函数之后可以将这个数字的顺序调换
+/*
+author:LearnerForever
+Date:2021 Sep 27th
+*/
 #include<stdio.h>
 #include<math.h>
 int Number_reverse(int num)
