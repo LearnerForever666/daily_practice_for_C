@@ -4,7 +4,6 @@
 author:LearnerForever
 Date:2021 Sep 28th
 */
-#include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 #define MAX 50
@@ -13,14 +12,14 @@ void charadd(char (**arr)[][MAX],char* padd)
 {
 	if(time==0)
 	{
-		*arr=(char(*)[][MAX])malloc(MAX);
+		*arr=(char(*)[][MAX])malloc(MAX*sizeof(char));
 		time++;
-		strcpy((char*)**arr,padd);
+		strcpy(***arr,padd);
 	}
 	else
 	{
-		*arr=(char(*)[][MAX])realloc(*arr,MAX*(time+1));
-		strcpy(((char*)(**arr))+time*MAX,padd);
+		*arr=(char(*)[][MAX])realloc(*arr,sizeof(char)*MAX*(time+1));
+		strcpy((**arr)[time],padd);
 		time++;
 	};
 }
