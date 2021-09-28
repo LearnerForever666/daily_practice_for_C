@@ -1,3 +1,9 @@
+//动态开辟一个二维数组 
+//This function is used to malloc a piece of room in memry to the two-dimensional arry while add some imformation you want.
+/*
+author:LearnerForever
+Date:2021 Sep 28th
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
